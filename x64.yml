@@ -14,7 +14,7 @@ CONFIG_GRUB_EFI_IMAGES=y
 CONFIG_VDI_IMAGES=y
 CONFIG_VMDK_IMAGES=y
 CONFIG_GRUB_TIMEOUT="0"
-#CONFIG_LINUX_6_1=y
+CONFIG_LINUX_6_1=y
 CONFIG_TESTING_KERNEL=y
 
 # Extra Packages
@@ -28,7 +28,7 @@ CONFIG_PACKAGE_kmod-backlight-pwm=y
 CONFIG_PACKAGE_kmod-drm=y
 CONFIG_PACKAGE_kmod-drm-amdgpu=y
 CONFIG_PACKAGE_kmod-drm-kms-helper=y
-CONFIG_PACKAGE_kmod-drm-radeon=y
+#CONFIG_PACKAGE_kmod-drm-radeon=y
 CONFIG_PACKAGE_kmod-drm-ttm=y
 CONFIG_PACKAGE_kmod-fb=y
 CONFIG_PACKAGE_kmod-fb-cfb-copyarea=y
