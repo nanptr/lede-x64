@@ -22,3 +22,6 @@ git clone https://github.com/vernesong/OpenClash package/OpenClash
 
 # Add adguardhome 
 git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
+
+# Add luci-app-ssr-plus
+git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
