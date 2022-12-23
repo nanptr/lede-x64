@@ -22,3 +22,14 @@ git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adg
 
 # Add luci-app-ssr-plus
 git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
+
+# Add luci-app-openclash
+mkdir package/luci-app-openclash
+cd package/luci-app-openclash
+git init
+git config core.sparsecheckout true
+echo "luci-app-openclash" >> .git/info/sparse-checkout
+git remote add -f origin https://github.com/vernesong/OpenClash.git
+git pull --depth 1 origin master
+git branch --set-upstream-to=origin/master master
+cd ../..
