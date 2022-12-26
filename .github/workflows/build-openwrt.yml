@@ -19,7 +19,7 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: 0 18 */2 * *
+    - cron: 0 18 */5 * *
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -148,7 +148,7 @@ jobs:
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")-lede-x64" >> $GITHUB_OUTPUT
         echo "release_date=$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
         touch release.txt
-        echo "admin address 10.0.0.1 kernel-${{ steps.compile.outputs.kernel_version }}" >> release.txt
+        echo "admin address 192.168.10.1 kernel-${{ steps.compile.outputs.kernel_version }}" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
