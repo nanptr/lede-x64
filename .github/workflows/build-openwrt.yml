@@ -145,7 +145,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H%M")-lede-x64" >> $GITHUB_OUTPUT
+        echo "release_tag=lede-x64" >> $GITHUB_OUTPUT
         echo "release_date=$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "admin address 192.168.10.1 kernel-${{ steps.compile.outputs.kernel_version }}" >> release.txt
@@ -157,7 +157,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
       with:
-        name: ${{ steps.tag.outputs.release_date }} lede-x64-${{ steps.compile.outputs.kernel_version }}
+        name: lede-x64-${{ steps.compile.outputs.kernel_version }}
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
