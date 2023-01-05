@@ -145,7 +145,7 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=lede-x64" >> $GITHUB_OUTPUT
+        echo "release_tag=lede-r5s" >> $GITHUB_OUTPUT
         echo "release_date=$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
         touch release.txt
         echo "admin address 192.168.10.1 kernel-${{ steps.compile.outputs.kernel_version }}" >> release.txt
