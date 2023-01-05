@@ -24,7 +24,9 @@ git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adg
 git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
 
 # Add luci-app-smartdns
+cd package
 svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
+cd ..
 
 # Add luci-app-openclash
 mkdir package/luci-app-openclash
