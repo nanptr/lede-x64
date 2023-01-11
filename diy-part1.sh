@@ -18,15 +18,13 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # Add adguardhome 
-git clone https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
+svn export https://github.com/Lienol/openwrt-package/branches/other/luci-app-adguardhome package/luci-app-adguardhome
 
 # Add luci-app-ssr-plus
 git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
 
 # Add luci-app-smartdns
-cd package
-svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
-cd ..
+svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns package/luci-app-smartdns
 
 # Add luci-app-openclash
 mkdir package/luci-app-openclash
