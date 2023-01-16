@@ -27,12 +27,4 @@ git clone https://github.com/fw876/helloworld package/luci-app-ssr-plus
 svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns package/luci-app-smartdns
 
 # Add luci-app-openclash
-mkdir package/luci-app-openclash
-cd package/luci-app-openclash
-git init
-git config core.sparsecheckout true
-echo "luci-app-openclash" >> .git/info/sparse-checkout
-git remote add -f origin https://github.com/vernesong/OpenClash.git
-git pull --depth 1 origin master
-git branch --set-upstream-to=origin/master master
-cd ../..
+svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
