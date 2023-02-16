@@ -30,4 +30,4 @@ svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns 
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 
 # test 6.1
-sed -i 's/5.15/6.1/g' target/linux/x86/Makefile
+# sed -i 's/5.15/6.1/g' target/linux/x86/Makefile
