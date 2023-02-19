@@ -54,12 +54,3 @@ svn co https://github.com/fw876/helloworld/trunk/xray-plugin package/xray-plugin
 svn co https://github.com/fw876/helloworld/trunk/lua-neturl package/lua-neturl
 svn co https://github.com/fw876/helloworld/trunk/trojan package/trojan
 svn co https://github.com/fw876/helloworld/trunk/redsocks2 package/redsocks2
-
-# Add luci-app-smartdns
-svn export https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns package/luci-app-smartdns
-
-# Add luci-app-openclash
-svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-
-# test 6.1
-# sed -i 's/5.15/6.1/g' target/linux/x86/Makefile
