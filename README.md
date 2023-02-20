@@ -8,10 +8,12 @@
 - IPV6
 - Adguardhome
 - SSR-Plus
+- Passwall
 - Openclash
 - UnblockNetease
 - Upnp
 - DDNS
+- Netdata
 
 ## Credits
 
