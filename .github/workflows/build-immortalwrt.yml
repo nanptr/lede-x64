@@ -155,7 +155,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
       with:
-        name: openwrt-x64-${{ steps.compile.outputs.kernel_version }}
+        name: immortalwrt-x64-${{ steps.compile.outputs.kernel_version }}
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
