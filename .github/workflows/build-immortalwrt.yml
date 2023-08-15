@@ -11,8 +11,8 @@
 name: Build immortalwrt
 
 on:
-  schedule:
-    - cron: '20 17 * * *'
+  #schedule:
+    #- cron: '20 17 * * *'
   repository_dispatch:
   workflow_dispatch:
     inputs:
